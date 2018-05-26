@@ -40,11 +40,6 @@ open class TabButton: NSButton {
         set { self.tabButtonCell?.representedObject = newValue }
     }
 
-    open var editable: Bool {
-        get { return self.tabButtonCell?.isEditable ?? false }
-        set { self.tabButtonCell?.isEditable = newValue }
-    }
-
     open var icon: NSImage? = nil {
         didSet {
             if self.icon != nil && self.iconView == nil {

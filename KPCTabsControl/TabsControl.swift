@@ -166,7 +166,6 @@ open class TabsControl: NSControl, NSTextDelegate {
             button.index = i
             button.item = item
             
-            button.editable = self.delegate?.tabsControl?(self, canEditTitleOfItem: item) == true
             button.buttonPosition = TabPosition.fromIndex(i, totalCount: newItemsCount)
             button.style = self.style
 
